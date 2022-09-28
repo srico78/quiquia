@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: ghostwhite;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+}
+header{
+    padding-top: 2%;
+	padding-right: 7%;
+	padding-bottom: 2%;
+	padding-left: 7%;
+	display: flex;
+	justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: #F7CF3E;
+    font-size: 1.5rem;
+}
+h1{
+  display: flex;
+  color: #F7CF3E;
+  width: 100%;background-image: url(./imagenes/imagen23.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family:'Kaushan Script';
+  font-size: 4rem;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  vertical-align: middle;
+}
+.topnav {
+    background: #333;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 2;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+}
+.topnav img{
+    width: 20%;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    top: 0px;
+    left: 0px;
+}
+
+.topnav ul li{
+    display: inline-block;
+}
+.topnav ul a {
+    font-family: 'Kaushan Script';
+    color: #F7CF3E;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.topnav ul li a:hover{
+    color: #ffffff;
+    
+}
+.quiquia{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding: 2%;
+    width: 100%;
+    height: 650px;
+    font-family: 'Playfair Display', serif;
+    background-image: url(../matyprocesos/imagenes/imagen9.jpg);
+	  background-size: cover;
+	  background-repeat: no-repeat;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: honeydew;
+    font-size: 1.5rem;
+}
+.imgsecundaria{
+	margin-top: 5%;
+	display: flex;
+}
+.imgsecundaria div{
+	width: 33%;
+	padding: 2%;
+	text-align: center;
+}
+.imgsecundaria div a img{
+	width: 100%;
+	margin-bottom: 2rem;
+}
+h4{
+	font-size: 100%;
+	font-family: 'Quicksand', sans-serif;
+	font-weight:400;
+}
+h2{
+  font-family:'Kaushan Script';
+  color: #F7CF3E;
+}
+header{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Quicksand', sans-serif, 700;
+    font-size: 1.5rem;
+}
+footer{
+  background-color: #333;
+  margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 150px;
+}
+footer img{
+  max-width: 3rem;
+	width: 100%;
+	height: auto;
+	margin-right: 2%;
+}
+.firma{
+  background-color: #333;
+  color: #ffffff;
+	display: flex;
+	justify-content: center;
+  padding-bottom: 2%;
+}
+p{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400
+}
+.principalquienessomos{
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding: 2%;
+  width: 100%;
+  height: 650px;
+  font-family: 'Playfair Display', serif;
+  background-image: url(../matyprocesos/imagenes/imagen21.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: honeydew;
+  font-size: 1.5rem;
+}
+.secundariaquienessomos{
+	padding: 5%;
+	display: block;
+  background-image: url(./imagenes/imagen16.jpg);
+}
+.qs1{
+  background-color: #333;
+  display: flex;
+  justify-content: left;
+  font-size: 2rem;
+  color: #F7CF3E;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-right: 100px;
+  margin-left: 20px;
+}
+.qs2{
+  display: flex;
+  justify-content: right;
+  font-size: 2rem;
+  align-items: center;
+  color: #333;
+  background-color: #F7CF3E;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 100px;
+}
+.qs1 img{
+	width: 25%;
+	padding: 2%;
+  justify-content: left;
+}
+.qs2 img{
+	width: 25%;
+	padding: 2%;
+  justify-content: right;
+}
+.qs1 p{
+	width: 30%;
+	padding: 2%;
+  justify-content: left;
+}
+.qs2 p{
+	width: 30%;
+	padding: 2%;
+  justify-content: right;
+}
+.secundariaquienessomos div a img{
+	width: 100%;
+	margin-bottom: 2rem;
+}
+
+.titulomenu{
+  display: flex;
+  background-color: #333;
+  width: 100%;
+  color: #F7CF3E;
+  font-family:'Kaushan Script';
+  font-size: 3rem;
+  margin: 0;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 5%;
+  vertical-align: middle;
+}
+h5{
+  display: flex;
+  color: #F7CF3E;
+  width: 100%;
+  background-image: url(./imagenes/imagen24.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family:'Kaushan Script';
+  font-size: 4rem;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  vertical-align: middle;
+}
+form{
+  background-image: url(./imagenes/imagen16.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  align-items: center;
+  padding: 10%;
+}
+form div{
+  background-color: #333;
+  margin: 10px;
+  padding: 50px;
+}
+form div label{
+  color: #F7CF3E;
+  font-family: 'Quicksand', sans-serif , 400;
+  font-size: 1.5rem;
+}
+.input{
+  border-color: #ffffff;
+  border-radius: 6px;
+  width: 25%;
+  height: 50px;
+  color: #ffffff;
+  font-family:'quicksand';
+  font-size: 1.5rem;
+  background-color: #333;
+}
+.submit{
+  border-style: none;
+  border-radius: 6px;
+  width: 100px;
+  height: 50px;
+  color: #ffffff;
+  font-family:'Kaushan Script';
+  font-size: 1.5rem;
+  background-color: #F7CF3E;
+}
+.submit:hover{
+  background-color: #ffffff;
+  color: #F7CF3E;
+}
+h6{
+  display: flex;
+  color: #F7CF3E;
+  width: 100%;background-image: url(./imagenes/imagen21.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family:'Kaushan Script';
+  font-size: 4rem;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  vertical-align: middle;
+}
+.espacio{
+  background-color: #333;
+  width: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+@media screen {
+    
+}

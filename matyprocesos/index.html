@@ -1,46 +1,67 @@
+<!DOCTYPE html>
 <html>
+    <link rel="stylesheet" href="index.css">
     <head>
         <div>
-            <a href="index.html"><img src="./imagenes/logo.png" style="width: 100px;"></a>
             <title> Quiquia </title>
-            <p> BEER POWER </p>
         </div>
     </head>
     <body width="1300px;">
         <header>
-            <div>
-                <nav>
-                    <th>
-                        <a href="menu.html">Menú</a>
-                        <a href="sucursales.html">Sucursales</a>
-                        <a href="quienessomos.html">Quienes somos</a>
-                        <a href="hacetupedido.html">Hacé tu pedido</a>
-                        <a href="reservar.html">Reservar</a>
-                        <img src="./imagenes/malta.png" style="width: 50px;">
-                        <a href="ingresar.html">Ingresar</a>
-                    </th>
+                <nav class="topnav">
+                    <ul>
+                        <li><link class="logo" rel="logo" href="index.html"><img src="./imagenes/logo.png"></li>
+                        <li><a href="menu.html">Menú</a></li>
+                        <li><a href="quienessomos.html">Quienes somos</a></li>
+                        <li><a href="login.html">Ingresar</a></li>
+                    </ul>
                 </nav>
-            </div>
-        </header> 
-        <img src="./imagenes/imagen9.jpg" style="width: 100%;" >
-        <table>
-            <tbody>
-                <th>
-                    <img src="./imagenes/imagen19.jpg" style="width: 100px;">
-                    <img src="./imagenes/imagen5.jpg" style="width: 100px;">
-                </th> 
-            </tbody>  
-        </table>
-
-        <article>
-            <p> Beer power </p>
-            <section>
-                <p>Las mejores cervezas realizadas bajo el más riguroso y exclusivo proceso, logrando ese sabor único que nos representa.</p>
-            </section>
-        </article>
+        </header>
+        <section>
+            <article class="quiquia">
+                <div>
+                    <img src="./imagenes/logotipo.png" alt="Logo quiquia" style="width:50%">
+                    <h2>beer power</h2>
+                </div>
+            </article>
+            <article class="imgsecundaria">
+                <div>
+                    <a href="menu.html">
+                        <img src="./imagenes/imagen11.jpg" alt="">
+                        <h4>COMIDA</h4>
+                    </a>
+                </div>
+                <div>
+                    <a href="menu.html">
+                        <img src="./imagenes/imagen1.jpg" alt="">
+                        <h4>CERVEZA</h4>
+                    </a>
+                </div>
+                <div>
+                    <a href="menu.html">
+                        <img src="./imagenes/imagen10.jpg" alt="">
+                        <h4>DISFRUTE</h4>
+                    </a>
+                </div>
+            </article>
+        </section>
+        <footer>
+            <img src="./imagenes/facebook.png" alt="Facebook">
+            <img src="./imagenes/whatsapp.png" alt="whatsapp">
+            <img src="./imagenes/instagram.png" alt="Instagram">
+        </footer>
+        <section class="firma">
+            <p>2022 Santiago Rico</p><br>
+        </section>
+        <script type="text/javascript">
+            function myFunction() {
+              var x = document.getElementById("menu_bar");
+              if (x.className === "barratop") {
+                x.className += " responsive";
+              } else {
+                x.className = "barratop";
+              }
+            }
+        </script>
     </body>
-    <footer>
-        <p>Posted by Santiago Rico</p>
-        <p><time datetime="2022/08/01">2022</time></p>
-    </footer>
 </html>
