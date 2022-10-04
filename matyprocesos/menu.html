@@ -8,13 +8,16 @@
     </head>
     <body width="1300px;">
         <header>
-            <nav class="topnav">
-                <ul>
-                    <li><link class="logo" rel="logo" href="index.html"><img src="./imagenes/logo.png"></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="login.html">Ingresar</a></li>
-                </ul>
-            </nav>
+            <div class="topnav" id="myTopnav">
+                <link class="logo" rel="logo" href="index.html"><img src="./imagenes/logo.png">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menú</a>
+                <a href="quienessomos.html">Quienes somos</a>
+                <a href="login.html">Ingresar</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <img src="./imagenes/malta.png" alt="" style="width: 150%;">
+                </a>
+            </div>
         </header>
         <section>
             <h1>Menú</h1>
@@ -288,6 +291,43 @@
                     </a>
                 </div>
             </article>
+            <p class="titulomenu">Sin alcohol</p> 
+            <article class="imgsecundaria">
+                <div>
+                    <a>
+                        <a>Agua</a>
+                        <br>
+                        <p>Botella individual de Agua con o sin gas. Línea Kin.</p>
+                        <br>
+                        <a>$250</a>
+                    </a>    
+                </div>
+                <div>
+                    <a>
+                        <a>Agua saborizada</a>
+                        <br>
+                        <p>Botella individual, consultar sabores.</p>
+                        <br>
+                        <a>$300</a>
+                    </a>        
+                </div>
+                <div>
+                    <a>
+                        <a>Gaseosa</a>
+                        <p>Lata de gaseosa, línea Coca-Cola.</p>
+                        <br>
+                        <a>$400</a>
+                    </a>
+                </div>
+                <div>
+                    <a>
+                        <a>Limonada</a>
+                        <p>Jugo de limón, almíbar de jengibre y agua.</p>
+                        <br>
+                        <a>$600</a>
+                    </a>    
+                </div>
+            </article>
         </section>        
         <footer>
             <img src="./imagenes/facebook.png" alt="Facebook">
@@ -295,7 +335,21 @@
             <img src="./imagenes/instagram.png" alt="Instagram">
         </footer>
         <section class="firma">
-            <p>2022 Santiago Rico</p><br>
+            <div>
+                <p style="font-size: 2rem;"><img src="./imagenes/logotipo.png" alt="" style="width: 8rem;">®</p><br>
+            </div>
+            <div>
+                <p>+54 11 3212 0988</p><br>
+            </div>
+            <div>
+                <p>fabricaquiquia@gmail.com</p><br>
+            </div>
+            <div>
+                <p>Copyright 2022 | QUIQUIA | Todos los derechos reservados</p><br>
+            </div>
+            <div>
+                <p>2022 Santiago Rico</p><br>
+            </div>    
         </section>
         <script type="text/javascript">
             function myFunction() {
