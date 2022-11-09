@@ -2,21 +2,26 @@
 <html>
     <link rel="stylesheet" href="index.css">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <div>
             <title>Menú</title>
         </div>
     </head>
     <body width="1300px;">
         <header>
-            <div class="topnav" id="myTopnav">
-                <link class="logo" rel="logo" href="index.html"><img src="./imagenes/logo.png">
+            <div class="topnav">
+                <a class="logo" rel="logo" href="index.html"><img src="./imagenes/logo.png"></a>
+            </div>
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
                 <a href="index.html">Home</a>
+                <a href="quienessomos.html">Quienes Somos</a>
                 <a href="menu.html">Menú</a>
-                <a href="quienessomos.html">Quienes somos</a>
                 <a href="login.html">Ingresar</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <img src="./imagenes/malta.png" alt="" style="width: 150%;">
-                </a>
+            </div>
+              
+            <div id="main">
+                <button class="openbtn" onclick="openNav()"><img src="./imagenes/malta.png" style="width: 75%;"></button> 
             </div>
         </header>
         <section>
@@ -24,319 +29,311 @@
             <p class="titulomenu">
                 Birras
             </p>
-            <article class="imgsecundaria">
-                <div>
-                    <a>
-                        <img src="./imagenes/birras/golden.PNG">
-                        <a>Golden</a>
-                        <p>ALE. Cerveza DORADA, balanceada hacia la malta con leve aroma a lúpulo. De AMARGOR BAJO. Refrescante, ligera y muy fácil de tomar. Ideal para el verano. IBU 19. ABV 5%</p>
-                        <br>
-                        <a>
-                            Pinta $500
-                            <br>
-                            Happy Hour $450
-                        </a>
-                    </a>    
+            <div class="productos">
+                <div class="card">
+                    <img src="./imagenes/birras/golden.PNG">
+                    <h2>Golden</h2>
+                    <p class="descripcion">ALE. Refrescante, ligera y muy fácil de tomar. Ideal para el verano. IBU 19. ABV 5%</p>
+                    <p class="price">Pinta $500</p>
+                    <br>
+                    <p><button>Agregar</button></p>
                 </div>
-                <div>
-                    <a>
-                        <img src="./imagenes/birras/hazy.PNG">
-                        <a>Hazy</a>
-                        <p>APA. Cerveza DORADA turbia con NOTAS FRUTALES Y FLORALES gracias al complejo equilibrio de los lúpulos Chinook y Simcoe. Suave y ligera. IBU 30. ABV 6%</p>
-                        <br>
-                        <a>
-                            Pinta $500
-                            <br>
-                            Happy Hour $450
-                        </a> 
-                    </a>        
+                <div class="card">
+                    <img src="./imagenes/birras/hazy.PNG">
+                    <h2>Hazy</h2>
+                    <p class="descripcion">APA. Suave, ligera y muy refrescante. IBU 30. ABV 6%</p>
+                    <p class="price">Pinta $500</p>
+                    <br>
+                    <p><button>Agregar</button></p>
                 </div>
-                <div>
-                    <a>
-                        <img src="./imagenes/birras/blackipa.PNG">
-                        <a>Black Ipa</a>
-                        <p>AMERICAN IPA NEGRA. Cerveza NEGRA oscura, balanceada hacia el lúpulo. De AMARGOR INTENSO con buen dejo. De CUERPO MEDIO con NOTAS VERDES A LÚPULO FRESCO, tanto en aroma como en sabor gracias al blend de lúpulos Citra y Mosaic balanceado con las notas a MALTAS CARAMELO Y TOSTADAS. Muy refrescante. Complejidad y robustez. IBU 48. ABV 6,5%</p>
-                        <br>
-                        <a>
-                            Pinta $500
-                            <br>
-                            Happy Hour $450
-                        </a>
-                    </a>
+                <div class="card">
+                    <img src="./imagenes/birras/blackipa.PNG">
+                    <h2>Black Ipa</h2>
+                    <p class="descripcion">AMERICAN IPA NEGRA. Muy refrescante. Complejidad y robustez. IBU 48. ABV 6,5%</p>
+                    <p class="price">Pinta $500</p>
+                    <br>
+                    <p><button>Agregar</button></p>
                 </div>
-                <div>
-                    <a>
-                        <img src="./imagenes/birras/irish.PNG">
-                        <a>Irish</a>
-                        <p>RED ALE. Cerveza ROJA, balanceada hacia la malta. Con NOTAS A CARAMELO tanto en sabor como en aroma, de final tostado y seco gracias al tostado de sus maltas. Alta tomabilidad. IBU 18. ABV 5%</p>
-                        <br>
-                        <a>
-                            Pinta $500
-                            <br>
-                            Happy Hour $450
-                        </a>
-                    </a>    
+                <div class="card">
+                    <img src="./imagenes/birras/irish.PNG">
+                    <h2>Irish</h2>
+                    <p class="descripcion">RED ALE. Alta tomabilidad. IBU 18. ABV 5%</p>
+                    <p class="price">Pinta $500</p>
+                    <br>
+                    <p><button>Agregar</button></p>
                 </div>
-                <div>
-                    <a>
-                        <img src="./imagenes/birras/honey.PNG">
-                        <a>Honey</a>
-                        <p>RED. Cerveza ROJA, balanceada hacia la malta con leve aroma a lúpulo. De CUERPO MEDIO-ALTO. Dulce, con NOTAS A MIEL tanto en aroma como en sabor, y un dejo a barrica por el aporte de roble en su maduración. IBU 19. ABV 6%</p>
-                        <br>
-                        <a>
-                            Pinta $500
-                            <br>
-                            Happy Hour $450
-                        </a>
-                    </a>
+                <div class="card">
+                    <img src="./imagenes/birras/honey.PNG">
+                    <h2>Honey</h2>
+                    <p class="descripcion">RED. Cerveza ROJA, con NOTAS A MIEL tanto en aroma como en sabor. IBU 19. ABV 6%</p>
+                    <p class="price">Pinta $500</p>
+                    <br>
+                    <p><button>Agregar</button></p>
                 </div>
-            </article>
-            <p class="titulomenu">Burguers</p> 
-            <article class="imgsecundaria">
-                <div>
-                    <a>
-                        <img src="./imagenes/burgas/hastalasmanos.PNG">
-                        <a>Hasta las manos</a>
-                        <br>
-                        <p>Doble medallón blend de 100g cada uno, cheddar, huevo y salsa ranchera.</p>
-                        <br>
-                        <a>$1.300</a>
-                    </a>    
+            </div>
+
+            <p class="titulomenu">Burguers</p>
+            <div class="productos">
+                <div class="card">
+                    <img src="./imagenes/burgas/hastalasmanos.PNG">
+                    <h2>Hasta las manos</h2>
+                    <p class="descripcion">Doble medallón blend de 100g cada uno, cheddar, huevo y salsa ranchera.</p>
+                    <p class="price">$1.500</p>
+                    <br>
+                    <p><button>Agregar</button></p>
                 </div>
-                <div>
-                    <a>
-                        <img src="./imagenes/burgas/rompepepe.PNG">
-                        <a>Rompe pepe</a>
-                        <br>
-                        <p>Doble medallón blend de 100g cada uno, doble queso cheddar, panceta ahumada, cebolla crispy y salsa ranchera.</p>
-                        <br>
-                        <a>$1.300</a>
-                    </a>        
+                <div class="card">
+                    <img src="./imagenes/burgas/rompepepe.PNG">
+                    <h2>Rompe Pepe</h2>
+                    <p class="descripcion">Doble medallón blend de 100g cada uno, doble queso cheddar, panceta ahumada, cebolla crispy y salsa ranchera.</p>
+                    <p class="price">$1.300</p>
+                    <br>
+                    <p><button>Agregar</button></p>
                 </div>
-                <div>
-                    <a>
-                        <img src="./imagenes/burgas/cerochamuyo.PNG">
-                        <a>Cero chamuyo</a>
-                        <p>Doble medallón blend de 100g cada uno, doble queso cheddar, doble panceta ahumada y salsa barbacoa con pepinillos agridulces.</p>
-                        <br>
-                        <a>$1.400</a>
-                    </a>
+                <div class="card">
+                    <img src="./imagenes/burgas/cerochamuyo.PNG">
+                    <h2>Cero Chamuyo</h2>
+                    <p class="descripcion">Doble medallón blend de 100g cada uno, doble queso cheddar, doble panceta ahumada y salsa barbacoa con pepinillos agridulces.</p>
+                    <p class="price">$1.400</p>
+                    <br>
+                    <p><button>Agregar</button></p>
                 </div>
-                <div>
-                    <a>
-                        <img src="./imagenes/burgas/sublime.PNG">
-                        <a>Sublime</a>
-                        <p>Doble medallón blend de 100g cada uno, queso roquefort, morrón ahumado y rúcula.</p>
-                        <br>
-                        <a>$1.400</a>
-                    </a>    
+                <div class="card">
+                    <img src="./imagenes/burgas/sublime.PNG">
+                    <h2>Sublime</h2>
+                    <p class="descripcion">Doble medallón blend de 100g cada uno, queso roquefort, morrón ahumado y rúcula.</p>
+                    <p class="price">$1.400</p>
+                    <br>
+                    <p><button>Agregar</button></p>
                 </div>
-                <div>
-                    <a>
-                        <img src="./imagenes/burgas/señoramagoyaveggie.PNG">
-                        <a>Señora magoya</a>
-                        <p>Medallón de lentejas con arroz yamaní, rúcula, palta y salsa de pepino y morrón</p>
-                        <br>
-                        <a>$1.100</a>
-                    </a>
+                <div class="card">
+                    <img src="./imagenes/burgas/señoramagoyaveggie.PNG">
+                    <h2>Señora Magoya</h2>
+                    <p class="descripcion">Medallón de lentejas con arroz yamaní, rúcula, palta y salsa de pepino y morrón.</p>
+                    <p class="price">$1.100</p>
+                    <br>
+                    <p><button>Agregar</button></p>
                 </div>
-            </article>
-            <p class="titulomenu">Para picar</p> 
-            <article class="imgsecundaria">
-                <div>
-                    <a>
-                        <img src="./imagenes/parapicar/papasclasicas.PNG">
-                        <a>Papas clásicas</a>
-                        <br>
-                        <p>Papas fritas</p>
-                        <br>
-                        <a>$800</a>
-                    </a>    
+            </div>
+            <div class="productos">
+                <div class="card">
+                    <img src="./imagenes/burgas/bigmama.PNG">
+                    <h2>BIG MAMA</h2>
+                    <p class="descripcion">Doble medallón blend de 100g cada uno, doble queso cheddar, jalapeños, ají en vinagre, ketchup y mostaza en granos.</p>
+                    <p class="price">$1.300</p>
+                    <br>
+                    <p><button>Agregar</button></p>
                 </div>
-                <div>
-                    <a>
-                        <img src="./imagenes/parapicar/papascheddar.PNG">
-                        <a>Papas cheddar</a>
-                        <br>
-                        <p>con cheddar, panceta y verdeo.</p>
-                        <br>
-                        <a>$1.000</a>
-                    </a>        
+                <div class="card">
+                    <img src="./imagenes/burgas/criolla.PNG">
+                    <h2>Criolla</h2>
+                    <p class="descripcion">Doble medallón blend de 100g cada uno, provoleta, criolla, lechuga, morrón ahumado y salsa burger.</p>
+                    <p class="price">$1.300</p>
+                    <br>
+                    <p><button>Agregar</button></p>
                 </div>
-                <div>
-                    <a>
-                        <img src="./imagenes/parapicar/papasquiquia.PNG">
-                        <a>Papas QUIQUIA</a>
-                        <p>con cheddar, panceta, verdeo y pulled pork ahumado.</p>
-                        <br>
-                        <a>$1.600</a>
-                    </a>
+                <div class="card">
+                    <img src="./imagenes/burgas/mexicana.PNG">
+                    <h2>Mexicana</h2>
+                    <p class="descripcion">Doble medallón picante de 100g cada uno, muzzarella, lechuga y guacamole.</p>
+                    <p class="price">$1.200</p>
+                    <br>
+                    <p><button>Agregar</button></p>
                 </div>
-                <div>
-                    <a>
-                        <img src="./imagenes/parapicar/papasespeciales.PNG">
-                        <a>Papas especiales</a>
-                        <p>con morrón, cebolla, champignones y queso sardo.</p>
-                        <br>
-                        <a>$1.100</a>
-                    </a>    
+                <div class="card">
+                    <img src="./imagenes/burgas/menuinfantil.PNG">
+                    <h2>Menú Infantil</h2>
+                    <p class="descripcion">Medallón con queso cheddar, acompañado con papas y gaseosa.</p>
+                    <p class="price">$1.200</p>
+                    <br>
+                    <p><button>Agregar</button></p>
                 </div>
-                <div>
-                    <a>
-                        <img src="./imagenes/parapicar/nachos.PNG">
-                        <a>Nachos</a>
-                        <p>con cheddar y carne con chile suavemente picante, frijol, crema ácida, palta y pico de gallo.</p>
-                        <br>
-                        <a>$1.400</a>
-                    </a>
+                <div class="card">
+                    <img src="./imagenes/burgas/chitolabocaveggie.PNG">
+                    <h2>Chito la Boca</h2>
+                    <p class="descripcion">Medallón de mijo con arroz yamaní, rúcula, guacamole y salsa de pepino y morrón.</p>
+                    <p class="price">$1.100</p>
+                    <br>
+                    <p><button>Agregar</button></p>
                 </div>
-            </article>
+            </div>
+
+
+            <p class="titulomenu">Para picar</p>
+            <div class="productos">
+                <div class="card">
+                    <img src="./imagenes/parapicar/papasclasicas.PNG">
+                    <h2>Papas Clásicas</h2>
+                    <p class="descripcion">Papas fritas.</p>
+                    <p class="price">$800</p>
+                    <br>
+                    <p><button>Agregar</button></p>
+                </div>
+                <div class="card">
+                    <img src="./imagenes/parapicar/papascheddar.PNG">
+                    <h2>Papas Cheddar</h2>
+                    <p class="descripcion">Papas fritas con cheddar, panceta y verdeo.</p>
+                    <p class="price">$1.000</p>
+                    <br>
+                    <p><button>Agregar</button></p>
+                </div>
+                <div class="card">
+                    <img src="./imagenes/parapicar/papasquiquia.PNG">
+                    <h2>Papas QUIQUIA</h2>
+                    <p class="descripcion">Papas fritas con cheddar, panceta, verdeo y pulled pork ahumado.</p>
+                    <p class="price">$1.600</p>
+                    <br>
+                    <p><button>Agregar</button></p>
+                </div>
+                <div class="card">
+                    <img src="./imagenes/parapicar/papasespeciales.PNG">
+                    <h2>Papas Especiales</h2>
+                    <p class="descripcion">Papas fritas con morrón, cebolla, champignones y queso sardo.</p>
+                    <p class="price">$1.100</p>
+                    <br>
+                    <p><button>Agregar</button></p>
+                </div>
+                <div class="card">
+                    <img src="./imagenes/parapicar/nachos.PNG">
+                    <h2>Nachos</h2>
+                    <p class="descripcion">Nachos con cheddar y carne con chile suavemente picante, frijol, crema ácida, palta y pico de gallo.</p>
+                    <p class="price">$1.400</p>
+                    <br>
+                    <p><button>Agregar</button></p>
+                </div>
+            </div>
+
+
             <p class="titulomenu">Pizzas</p> 
-            <article class="imgsecundaria">
-                <div>
-                    <a>
-                        <img src="./imagenes/pizzas/muzzarella.PNG">
-                        <a>Muzzarella</a>
-                        <br>
-                        <p>Muzzarella, salsa pizza y olivas verdes.</p>
-                        <br>
-                        <a>$1.100</a>
-                    </a>    
+            <div class="productos">
+                <div class="card">
+                    <img src="./imagenes/pizzas/muzzarella.PNG">
+                    <h2>Muzzarella</h2>
+                    <p class="descripcion">Muzzarella, salsa pizza y olivas verdes.</p>
+                    <p class="price">$1.100</p>
+                    <br>
+                    <p><button>Agregar</button></p>
                 </div>
-                <div>
-                    <a>
-                        <img src="./imagenes/pizzas/especial.PNG">
-                        <a>Especial</a>
-                        <br>
-                        <p>Muzzarella, salsa pizza, rúcula, jamón crudo, parmesano y olivas negras.</p>
-                        <br>
-                        <a>$1.400</a>
-                    </a>        
+                <div class="card">
+                    <img src="./imagenes/pizzas/especial.PNG">
+                    <h2>Especial</h2>
+                    <p class="descripcion">Muzzarella, salsa pizza, rúcula, jamón crudo, parmesano y olivas negras.</p>
+                    <p class="price">$1.400</p>
+                    <br>
+                    <p><button>Agregar</button></p>
                 </div>
-                <div>
-                    <a>
-                        <img src="./imagenes/pizzas/ilcaro.PNG">
-                        <a>Il Carpo</a>
-                        <p>Muzzarella, salsa pizza, tomate en rodajas, albahaca, olivas negras y aceite de ajo.</p>
-                        <br>
-                        <a>$1.200</a>
-                    </a>
+                <div class="card">
+                    <img src="./imagenes/pizzas/ilcaro.PNG">
+                    <h2>Il Caro</h2>
+                    <p class="descripcion">Muzzarella, salsa pizza, tomate en rodajas, albahaca, olivas negras y aceite de ajo.</p>
+                    <p class="price">$1.200</p>
+                    <br>
+                    <p><button>Agregar</button></p>
                 </div>
-                <div>
-                    <a>
-                        <img src="./imagenes/pizzas/roqueyjamon.PNG">
-                        <a>Roque y jamón</a>
-                        <p>Muzzarella, salsa pizza, roquefort, jamón y olivas negras.</p>
-                        <br>
-                        <a>$1.500</a>
-                    </a>    
+                <div class="card">
+                    <img src="./imagenes/pizzas/roqueyjamon.PNG">
+                    <h2>Roque y Jamón</h2>
+                    <p class="descripcion">Muzzarella, salsa pizza, roquefort, jamón y olivas negras.</p>
+                    <p class="price">$1.500</p>
+                    <br>
+                    <p><button>Agregar</button></p>
                 </div>
-                <div>
-                    <a>
-                        <img src="./imagenes/pizzas/vegetales.PNG">
-                        <a>Vegetales</a>
-                        <p>Muzzarella, salsa pizza, tomates, morrón, champignones y olivas negras.</p>
-                        <br>
-                        <a>$1.300</a>
-                    </a>
+                <div class="card">
+                    <img src="./imagenes/pizzas/vegetales.PNG">
+                    <h2>Vegetales</h2>
+                    <p class="descripcion">Muzzarella, salsa pizza, tomates, morrón, champignones y olivas negras.</p>
+                    <p class="price">$1.300</p>
+                    <br>
+                    <p><button>Agregar</button></p>
                 </div>
-            </article>
+            </div>
+
+
             <p class="titulomenu">Tragos</p> 
-            <article class="imgsecundaria">
-                <div>
-                    <a>
-                        <img src="./imagenes/tragos/fernet.PNG">
-                        <a>Fernet</a>
-                        <br>
-                        <p>Fernet Branca y Coca-Cola.</p>
-                        <br>
-                        <a>$900</a>
-                    </a>    
+            <div class="productos">
+                <div class="card">
+                    <img src="./imagenes/tragos/fernet.PNG">
+                    <h2>Fernet</h2>
+                    <p class="descripcion">Fernet Branca con Coca-Cola.</p>
+                    <p class="price">$900</p>
+                    <br>
+                    <p><button>Agregar</button></p>
                 </div>
-                <div>
-                    <a>
-                        <img src="./imagenes/tragos/gintonic.PNG">
-                        <a>Gin tonic</a>
-                        <br>
-                        <p>Gin con agua tónica. Clásico o saborizado.</p>
-                        <br>
-                        <a>$1.200</a>
-                    </a>        
+                <div class="card">
+                    <img src="./imagenes/tragos/gintonic.PNG">
+                    <h2>Gin Tonic</h2>
+                    <p class="descripcion">Gin con agua tónica. Clásico o saborizado.</p>
+                    <p class="price">$1.200</p>
+                    <br>
+                    <p><button>Agregar</button></p>
                 </div>
-                <div>
-                    <a>
-                        <img src="./imagenes/tragos/whiscola.jpg">
-                        <a>Whiscola</a>
-                        <p>Whisky y Coca-Cola.</p>
-                        <br>
-                        <a>$900</a>
-                    </a>
+                <div class="card">
+                    <img src="./imagenes/tragos/whiscola.jpg">
+                    <h2>Whiscola</h2>
+                    <p class="descripcion">Whisky y Coca-Cola.</p>
+                    <p class="price">$900</p>
+                    <br>
+                    <p><button>Agregar</button></p>
                 </div>
-                <div>
-                    <a>
-                        <img src="./imagenes/tragos/daikiri.PNG">
-                        <a>Daikiri</a>
-                        <p>Maracuyá, Frutilla o Frutos Rojos, con Ron blanco.</p>
-                        <br>
-                        <a>$1.400</a>
-                    </a>    
+                <div class="card">
+                    <img src="./imagenes/tragos/daikiri.PNG">
+                    <h2>Daikiri</h2>
+                    <p class="descripcion">Maracuyá, Frutilla o Frutos Rojos, con Ron blanco.</p>
+                    <p class="price">$1.400</p>
+                    <br>
+                    <p><button>Agregar</button></p>
                 </div>
-                <div>
-                    <a>
-                        <img src="./imagenes/tragos/campari.PNG">
-                        <a>Campari</a>
-                        <p>Campari y jugo de naranja</p>
-                        <br>
-                        <a>$900</a>
-                    </a>
+                <div class="card">
+                    <img src="./imagenes/tragos/campari.PNG">
+                    <h2>Campari</h2>
+                    <p class="descripcion">Campari y jugo de naranja.</p>
+                    <p class="price">$900</p>
+                    <br>
+                    <p><button>Agregar</button></p>
                 </div>
-            </article>
-            <p class="titulomenu">Sin alcohol</p> 
-            <article class="imgsecundaria">
-                <div>
-                    <a>
-                        <a>Agua</a>
-                        <br>
-                        <p>Botella individual de Agua con o sin gas. Línea Kin.</p>
-                        <br>
-                        <a>$250</a>
-                    </a>    
+            </div>
+
+
+            <p class="titulomenu">Sin alcohol</p>
+            <div class="productos">
+                <div class="card">
+                    <h2>Agua</h2>
+                    <p class="descripcion2">Botella individual de Agua con o sin gas. Línea Kin.</p>
+                    <p class="price">$250</p>
+                    <br>
+                    <p><button>Agregar</button></p>
                 </div>
-                <div>
-                    <a>
-                        <a>Agua saborizada</a>
-                        <br>
-                        <p>Botella individual, consultar sabores.</p>
-                        <br>
-                        <a>$300</a>
-                    </a>        
+                <div class="card">
+                    <h2>Agua Saborizada</h2>
+                    <p class="descripcion2">Botella individual, consultar sabores.</p>
+                    <p class="price">$300</p>
+                    <br>
+                    <p><button>Agregar</button></p>
                 </div>
-                <div>
-                    <a>
-                        <a>Gaseosa</a>
-                        <p>Lata de gaseosa, línea Coca-Cola.</p>
-                        <br>
-                        <a>$400</a>
-                    </a>
+                <div class="card">
+                    <h2>Gaseosa</h2>
+                    <p class="descripcion2">Lata de gaseosa, línea Coca-Cola.</p>
+                    <p class="price">$400</p>
+                    <br>
+                    <p><button>Agregar</button></p>
                 </div>
-                <div>
-                    <a>
-                        <a>Limonada</a>
-                        <p>Jugo de limón, almíbar de jengibre y agua.</p>
-                        <br>
-                        <a>$600</a>
-                    </a>    
+                <div class="card">
+                    <h2>Limonada</h2>
+                    <p class="descripcion2">Jugo de limón, almíbar de jengibre y agua.</p>
+                    <p class="price">$600</p>
+                    <br>
+                    <p><button>Agregar</button></p>
                 </div>
-            </article>
+            </div>
         </section>        
         <footer>
-            <img src="./imagenes/facebook.png" alt="Facebook">
-            <img src="./imagenes/whatsapp.png" alt="whatsapp">
-            <img src="./imagenes/instagram.png" alt="Instagram">
+            <a href="https://www.pedidosya.com.ar/restaurantes/tigre/quiquia-vilaterra-menu"> <img src="./imagenes/pedidosya.png" alt="PedidosYa"></a>
+            <a href="http://wa.me/5491131215403"> <img src="./imagenes/whatsapp.png" alt="whatsapp">
+            <a href="https://www.instagram.com/cerveceriaquiquia/?hl=es"> <img src="./imagenes/instagram.png" alt="Instagram"></a>
         </footer>
         <section class="firma">
             <div>
-                <p style="font-size: 2rem;"><img src="./imagenes/logotipo.png" alt="" style="width: 8rem;">®</p><br>
+                <p style="font-size: 1.5rem;"><img src="./imagenes/logotipo.png" alt="" style="width: 8rem;">®</p><br>
             </div>
             <div>
                 <p>+54 11 3212 0988</p><br>
@@ -349,16 +346,17 @@
             </div>
             <div>
                 <p>2022 Santiago Rico</p><br>
-            </div>    
+            </div>
         </section>
-        <script type="text/javascript">
-            function myFunction() {
-              var x = document.getElementById("menu_bar");
-              if (x.className === "barratop") {
-                x.className += " responsive";
-              } else {
-                x.className = "barratop";
-              }
+        <script>
+            function openNav() {
+              document.getElementById("mySidebar").style.width = "250px";
+              document.getElementById("main").style.marginLeft = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidebar").style.width = "0";
+              document.getElementById("main").style.marginLeft= "0";
             }
         </script>
     </body>
