@@ -429,6 +429,7 @@ h6{
 	width: 33%;
 	padding: 2%;
 	text-align: center;
+  transition: width 0.3s;
 }
 .productos div img{
 	width: 100%;
@@ -438,6 +439,7 @@ h6{
 
 .productos div:hover{
   background-color: #f1f1f1;
+  width: 480px;
 }
 
 .card {
